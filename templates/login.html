@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block body %}
+    <div class="form-container">
+        <h1>Account Login</h1>
+        <form class="login-form" action="/login" method="post">
+            <input autocomplete="off" autofocus type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>   
+{% endblock %}
+

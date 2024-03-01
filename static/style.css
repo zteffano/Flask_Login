@@ -1,0 +1,75 @@
+:root {
+    /* Define your color scheme here */
+    --background-color: #1a1a1a;
+    --form-background-color: #333333;
+    --text-color: #ffffff;
+    --input-background-color: #222222;
+    --input-border-color: #555555;
+    --button-background-color: #007bff;
+    --button-hover-background-color: #0056b3;
+    --input-focus-border-color: #007bff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: var(--form-background-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+.form-container h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--input-background-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: var(--input-focus-border-color);
+}
+
+.login-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-form button:hover {
+    background-color: var(--button-hover-background-color);
+}
